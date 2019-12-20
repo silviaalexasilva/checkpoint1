@@ -45,6 +45,10 @@ body {
 .grid-gallery .item{
     margin-bottom: 20px;
   }
+
+  .baguetteBox-button {
+    background-color: transparent !important;
+}
   
   @media (min-width: 576px) {
   

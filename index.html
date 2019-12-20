@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <section class="grid-gallery">
+    <section class="gallery-block grid-gallery">
         <div class="container">
             <div class="heading">
                 <h2>The World of Food</h2>
@@ -140,9 +140,13 @@
                 </div>
              </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.grid-gallery', { animation: 'slideIn'});
-    </script>
+<script>
+
+$(document).on("click", '["lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+
+</script>
 </body>
 </html>
